@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container {
+      display: grid;
+      background-color: black; /* Transparent background for grid items */
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      width: 748px;
+      height: 748px;
+      gap: 9px
+    }
+
+    #grid-red {
+      background-color: #E72F24;
+      height: 414px;
+      width: 320px;
+    }
+
+    #grid-white1 {
+      background-color: #F0F1EC; /* White color for the second grid item */
+      height: 414px;
+      width: 420px;
+      grid-column: span 3;
+    }
+
+    #grid-white2 {
+      background-color: #F0F1EC; /* White color for the third grid item */
+      height: 295px;
+    }
+
+      #grid-white3 {
+      background-color: #F0F1EC; /* White color for the third grid item */
+      height: 295px;
+      width: 360px;
+    }
+
+      #grid-blue {
+      background-color: #004592; /* White color for the third grid item */
+      height: 130px;
+      width: 50px;
+      border-bottom: solid 10px black;
+      grid-area: 2 / 4 / 2 / 4; /* Positioning the blue grid item */
+    }
+
+    #grid-white4 {
+      background-color: #F0F1EC; /* White color for the third grid item */
+      height: 145px;
+      width: 50px;
+      margin-top: 150px;
+      grid-area: 2 / 4 / 4 / 4;
+    }
+
+    #grid-white5 {
+      background-color: #F0F1EC; /* White color for the third grid item */
+      height: 21px;
+      width: 320px;
+      grid-row: 4 / 4; /* Positioning the white grid item */    
+    }
+
+    #grid-yellow {
+      background-color: #F9D01E; /* White color for the third grid item */
+      height: 21px;
+      width: 198px;
+      grid-column: 2 / 3; /* Positioning the yellow grid item */
+      grid-row: 4 / 4; /* Positioning the yellow grid item */
+    }
+
+    #grid-green {/* Black color for the third grid item */
+      background-color: green; /* White color for the third grid item */
+      height: 21px;
+      width: 153px;
+      grid-column: 3 / 4; /* Positioning the green grid item */
+      grid-row: 4 / 4; /* Positioning the green grid item */
+    }
+
+    #grid-white6 {
+      background-color: #F0F1EC; /* White color for the third grid item */
+      height: 22px;
+      width: 50px;
+      grid-column: 4 / 5; /* Positioning the white grid item */
+      grid-row: 4 / 4; /* Positioning the white grid item */
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+<div class="container">
+  <div class="grid-container">
+    <div id="grid-red" class="grid.item"></div>
+    <div id="grid-white1" class="grid.item"></div>
+    <div id="grid-white2" class="grid.item"></div>
+    <div id="grid-white3" class="grid.item"></div>
+    <div id="grid-white4" class="grid.item"></div>
+    <div id="grid-blue" class="grid.item"></div>
+    <div id="grid-white5"class="grid.item"></div> 
+    <div id="grid-yellow"class="grid.item"></div>
+    <div id="grid-green"class="grid.item"></div>
+    <div id="grid-white6"class="grid.item"></div>
+    <div id="grid-black" class="grid.item"></div>
+  </div>
+</div>
+
+  <script>
+    // JavaScript can be added here if needed
+  </script>
+</body>
+
+</html>
